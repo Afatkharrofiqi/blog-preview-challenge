@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,31 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+// const figTree = localFont({
+//   src: [
+//     {
+//       path: "../../public/fonts/static/Figtree-ExtraBold.ttf",
+//       style: "normal",
+//       weight: "800",
+//     },
+//     {
+//       path: "../../public/fonts/static/Figtree-SemiBold.ttf",
+//       style: "normal",
+//       weight: "600",
+//     },
+//     {
+//       path: "../../public/fonts/Figtree-VariableFont_wght.ttf",
+//       style: "normal",
+//       weight: "500",
+//     },
+//     {
+//       path: "../../public/fonts/Figtree-Italic-VariableFont_wght.ttf",
+//       style: "italic",
+//       weight: "500",
+//     },
+//   ],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
